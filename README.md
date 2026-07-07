@@ -1,69 +1,165 @@
-# Enterprise Performance & Financial Analytics Platform
+# 📊 Enterprise KPI Reporting Dashboard
 
-## Overview
+Executive KPI reporting solution built using **AdventureWorks 2022**, **SQL Server**, **Power BI** and **DAX**.
 
-This project demonstrates an end-to-end Business Intelligence solution built using SQL Server, Power BI and Python.
-
-The goal is to transform raw business data into actionable insights that support business and management decision making.
+The project demonstrates how enterprise sales data can be transformed into interactive dashboards for executive reporting, sales performance monitoring and customer analytics.
 
 ---
 
-## Business Objectives
+# Dashboard Preview
 
-• Analyze revenue, profitability and business performance
+## Executive Overview
+![Executive](powerbi/01_Executive.png)
 
-• Identify customer and product trends
+## Sales Performance
+![Sales](powerbi/02_Sales.png)
 
-• Build executive dashboards and KPI reporting
-
-• Support forecasting and strategic decision making
-
-• Develop scalable reporting and analytics solutions
-
----
-
-## Technology Stack
-
-• SQL Server
-
-• Power BI
-
-• Python
-
-• GitHub
+## Customer & Territory Analytics
+![Customer](powerbi/03_Customer.png)
 
 ---
 
-## Planned Deliverables
+# Business Problem
 
-### Data Warehouse
+Management requires one centralized reporting platform to monitor:
 
-• Star Schema Design
+- Sales Revenue
+- Orders
+- Customer Performance
+- Product Performance
+- Sales Territories
+- Executive KPIs
 
-• SQL Queries and Views
-
-• Data Modeling
-
-### Business Intelligence
-
-• Executive Dashboard
-
-• Financial Dashboard
-
-• Customer Analytics Dashboard
-
-• Product Performance Dashboard
-
-### Advanced Analytics
-
-• Revenue Forecasting
-
-• Customer Segmentation (RFM)
-
-• Anomaly Detection
+This dashboard provides a single source of truth for business reporting.
 
 ---
 
-## Project Status
+# Architecture
 
-Currently in development.
+```
+AdventureWorks2022
+
+        │
+
+        ▼
+
+SQL Server
+
+        │
+
+        ▼
+
+SQL Reporting Views
+
+        │
+
+        ▼
+
+Power BI
+
+        │
+
+        ▼
+
+Executive KPI Dashboards
+```
+
+---
+
+# Technology Stack
+
+- SQL Server 2022
+- Power BI
+- DAX
+- SQL Views
+- Power Query
+
+---
+
+# Reporting Views
+
+- Reporting_vw_MonthlyRevenue
+- Reporting_vw_ProductPerformance
+- Reporting_vw_TopCustomers
+- Reporting_vw_SalespersonPerformance
+- Reporting_vw_SalesTerritoryPerformance
+
+---
+
+# Dashboard Pages
+
+## Executive Overview
+
+- Revenue KPIs
+- Orders
+- Revenue Trend
+- Best Products
+- Highest Value Customers
+- Regional Revenue
+
+---
+
+## Sales Performance
+
+- Orders by Month
+- Product Revenue
+- Quantity Sold
+- Salesperson Performance
+
+---
+
+## Customer & Territory Analytics
+
+- Customer KPIs
+- Revenue by Territory
+- Orders by Territory
+- Top Customers
+- Territory Distribution
+
+---
+
+# Features
+
+✔ Executive Reporting
+
+✔ Sales Analytics
+
+✔ Customer Analytics
+
+✔ Territory Analysis
+
+✔ Interactive Filters
+
+✔ DAX Measures
+
+✔ SQL Reporting Views
+
+✔ KPI Dashboards
+
+---
+
+# Project Structure
+
+```
+powerbi/
+screenshots/
+sql/
+README.md
+```
+
+---
+
+# Future Improvements
+
+- Microsoft Fabric
+- Power BI Service Deployment
+- Row Level Security
+- Automated Refresh
+
+---
+
+# Author
+
+**Shreya Jayani**
+
+Business Intelligence | Power BI | SQL | Data Analytics
